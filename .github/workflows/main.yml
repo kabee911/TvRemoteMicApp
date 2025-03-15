@@ -25,6 +25,9 @@ jobs:
       - name: Build APK
         run: ./gradlew assembleDebug --stacktrace
 
+      - name: List APK files
+        run: ls -R app/build/outputs/
+
       - name: Find APK
         run: find app/build/outputs -name "*.apk" || echo "No APK found"
 
