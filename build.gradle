@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group 'com.kabee911'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.5.4'
+    testImplementation 'junit:junit:4.13.2'
+}
